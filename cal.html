@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<title> CALCULATER</title>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="mainbox" id="mainbox">
+				
+			</div><br><br><br><br>
+			<div class="box">
+				<div class="bigbox" onclick="onoff()" > <center>ON</center> </div>
+				<div class="smallbox1" onclick="offf()"> <CENTER>OFF</CENTER></div>
+				<div class="bigbox" onclick="clearr()"><CENTER>CLEAR</CENTER></div>
+				<div class="smallbox colour shradius textcolor" onclick="writevalue('%')">%</div>
+				<div class="smallbox colour shradius" onclick="writevalue('/')">/</div>
+				<div class="smallbox colour shradius" onclick="writevalue()"></div>
+				<div class="smallbox colour shradius" onclick="writevalue('+')">+</div>
+				<div class="smallbox" onclick="writevalue('1')">1</div>
+				<div class="smallbox" onclick="writevalue('2')">2</div>
+				<div class="smallbox" onclick="writevalue('3')">3</div>
+				<div class="smallbox colour shradius" onclick="writevalue('-')">-</div>
+				<div class="smallbox" onclick="writevalue('4')">4</div>
+				<div class="smallbox" onclick="writevalue('5')">5</div>
+				<div class="smallbox" onclick="writevalue('6')">6</div>
+				<div class="smallbox colour shradius" onclick="getresult()">=</div>
+				<div class="smallbox" onclick="writevalue('7')">7</div>
+				<div class="smallbox" onclick="writevalue('8')">8</div>
+				<div class="smallbox" onclick="writevalue('9')">9</div>
+				<div class="smallbox colour shradius" onclick="writevalue('.')">.</div>
+				<div class="smallbox" onclick="writevalue('00')">00</div>
+				<div class="smallbox" onclick="writevalue('0')">0</div>
+				<div class="smallbox" onclick="backk()">BACK</div>
+				<div class="smallbox colour shradius" onclick="writevalue('')"></div>
+				
+
+
+
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
+
+
+
+<style type="text/css">
+.container{
+	height: 420px;
+	width: 290px;
+	background-color: black;
+	margin-top: 100px;
+	margin-left: 35%;
+	border-radius: 20px;
+}	
+
+.mainbox{
+
+    padding: 20px;
+
+    width: 230px;
+    margin-top: 18px;
+   
+    position: absolute;
+    margin-left: 14px;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px 2px gray;
+
+}
+
+
+
+.box{
+	
+	width: 280px;
+	background-color: black;
+	margin-left: 10px;
+    padding-bottom: 8px;
+	padding-top: 8px;
+    border-radius: 10%;
+}
+
+
+.smallbox{
+	
+	width: 50px;
+	background-color: black;
+	float: left;
+	color:white;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 10%;
+	box-shadow:1px 1px 1px 1px darkslategray;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	text-align: center;
+}
+.bigbox{
+	
+	width: 85px;
+	background-color: white;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	box-shadow:1px 1px 1px 1px orangered;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	text-align: center;
+}
+.smallbox1{
+	
+	width: 50px;
+	background-color:olivedrab;
+	float: left;
+	color:white;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+text-align: center;
+}
+.colour{
+	background-color: rgba(0,128,109,0.825);
+}
+
+.shradius{
+	box-shadow:1px 1px 1px 1px whitesmoke;
+}
+
+</style>
+<HTML>
+	<head>
+<title>calculator</title>
+	</head>
+	<body>
+		<section>
+
+		</section>
+	</body>
+</HTML>
+<script>
+
+	function writevalue(x)
+	{
+		var a  = document.getElementById("mainbox").innerHTML;
+		var boxcolor = document.getElementById("mainbox").style.backgroundColor;
+		
+		if(boxcolor=="rgb(0, 254, 254)")
+		{
+			document.getElementById("mainbox").innerHTML = a+x;
+		}
+	}
+
+	function onoff()
+	{
+		document.getElementById("mainbox").style.backgroundColor = '#00FEFE';
+		
+	}
+
+	function offf()
+	{
+		document.getElementById("mainbox").style.backgroundColor = 'darkslategrey';
+		document.getElementById("mainbox").innerHTML = "";
+	}
+
+
+	// function calc()
+	// {
+	// 	var a=document.getElementById("mainbox").innerHTML;
+	// 	var b= a+number;
+	// 	document.getElementById("mainbox"),innerHTML=b;
+	// }
+	function getresult()
+	{
+		var a= document.getElementById("mainbox").innerHTML;
+		var b=eval(a);
+		document.getElementById("mainbox").innerHTML=b;
+
+	}
+
+	function clearr()
+	{
+		document.getElementById("mainbox").innerHTML = "";
+	}
+
+	function backk()
+	{
+		document.getElementById("mainbox").innerHTML = document.getElementById("mainbox").innerHTML.slice(0,-1)
+	}
+
+
+</script>

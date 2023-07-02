@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <p>Curent Date : <span id="outputdate"></span> </p>
+    
+
+    <script>
+//          let mydate  = new Date();
+//         //  month = mydate.getMonth();
+//          var month = ["1", "2", "3", "4", "5", "6",
+// "7", "8", "9", "10", "11", "12"][mydate.getMonth()];
+//           day = mydate.getDay();
+//           year = mydate.getFullYear();
+//           mydatee = mydate.getDate();
+
+// //         console.log(cdate);
+
+// //         var month = ["January", "February", "March", "April", "May", "June",
+// // "July", "August", "September", "October", "November", "December"][cdate.getMonth()];
+// // var str = month + ' ' + cdate.getFullYear();
+      
+// //         document.getElementById("outputdate").innerHTML = str;
+
+// //let cdate = new Date(year,month,day);
+// mynewdate = mydatee +"-"+  month +"-"+ year
+
+
+// document.getElementById("outputdate").innerHTML = mynewdate;
+
+
+// let hour = new Date()
+// hourr = hour.getHours();
+// console.log("Current hour is",hourr);
+
+// if(hourr <= 12)
+// {
+//     console.log("Good morning")
+// }
+// else if(hourr  <= 16)
+// {
+//     console.log("Good Afternoon")
+// }
+
+// else if(hourr  <= 20)
+// {
+//     console.log("Good Evenig")
+// }
+// else
+// {
+//     console.log("Good Night")
+// }
+
+
+
+
+// number = prompt("Enter any digit");
+// x = 1;
+// for(i=1;i<=number;i++)
+// {
+//     x*=i;
+// }
+
+// document.write(`number ${number} factorial is ${x}`);
+
+
+// const side1 = parseInt(prompt('Enter side1: '));
+// const side2 = parseInt(prompt('Enter side2: '));
+// const side3 = parseInt(prompt('Enter side3: '));
+
+// // calculate the semi-perimeter
+// const s = (side1 + side2 + side3) / 2;
+
+// //calculate the area
+// const areaValue = Math.sqrt(
+//   s * (s - side1) * (s - side2) * (s - side3)
+// );
+
+// console.log(
+//   `The area of the triangle is ${areaValue}`
+// );
+
+
+
+// program to check if the number is even or odd
+// take input from the user
+// const number = prompt("Enter a number: ");
+
+// //check if the number is even
+// if(number % 2 == 0) {
+//     console.log("The number is even.");
+// }
+
+// // if the number is odd
+// else {
+//     console.log("The number is odd.");
+// }
+
+
+// program to find the largest among three numbers
+
+// take input from the user
+// const num1 = parseFloat(prompt("Enter first number: "));
+// const num2 = parseFloat(prompt("Enter second number: "));
+// const num3 = parseFloat(prompt("Enter third number: "));
+// let largest;
+
+// // check the condition
+// if(num1 >= num2 && num1 >= num3) {
+//     largest = num1;
+// }
+// else if (num2 >= num1 && num2 >= num3) {
+//     largest = num2;
+// }
+// else {
+//     largest = num3;
+// }
+
+// // // display the result
+// // console.log("The largest number is " + largest);
+
+// // program to print prime numbers between the two numbers
+
+// // take input from the user
+// const lowerNumber = parseInt(prompt('Enter lower number: '));
+// const higherNumber = parseInt(prompt('Enter higher number: '));
+
+// console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
+
+// // looping from lowerNumber to higherNumber
+// for (let i = lowerNumber; i <= higherNumber; i++) {
+//     let flag = 0;
+
+//     // looping through 2 to user input number
+//     for (let j = 2; j < i; j++) {
+//         if (i % j == 0) {
+//             flag = 1;
+//             break;
+//         }
+//     }
+
+//     // if number greater than 1 and not divisible by other numbers
+//     if (i > 1 && flag == 0) {
+//         console.log(i);
+//     }
+// }
+
+
+
+// // program that checks if the number is positive, negative or zero
+// // input from the user
+// const number = parseInt(prompt("Enter a number: "));
+
+// // check if number is greater than 0
+// if (number > 0) {
+//     console.log("The number is positive");
+// }
+
+// // check if number is 0
+// else if (number == 0) {
+//   console.log("The number is zero");
+// }
+
+// // if number is less than 0
+// else {
+//      console.log("The number is negative");
+// }
+
+
+// program to find the factorial of a number
+
+// take input from the user
+const number = parseInt(prompt('Enter a positive integer: '));
+
+// checking if number is negative
+if (number < 0) {
+    console.log('Error! Factorial for negative number does not exist.');
+}
+
+// if number is 0
+else if (number === 0) {
+    console.log(`The factorial of ${number} is 1.`);
+}
+
+// if number is positive
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    console.log(`The factorial of ${number} is ${fact}.`);
+}
+    </script>.
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+
+    <button onclick="shanky()">Click Here</button>
+    <input type="number" id="inputnumber" onblur="lalitdowhile()">
+<script>
+
+lalsingh(5,7);
+
+let a = 10;
+const b = 5;
+
+
+let  c  = a+b;
+//alert(c);
+//document.write(c);
+
+
+
+
+let cars = ['audi','bmw','mercideas','tata'];
+
+document.write(cars[1])
+
+
+let person = {"name":"Ankit Parashar","age":26,"address":"Gwalior"};
+
+document.write(person.name);
+
+
+
+
+
+
+
+
+function lalit()
+{
+
+ let mynuber = document.getElementById("inputnumber").value;
+
+ for(ii=1;ii < 11; ii++)
+{
+document.write(ii*mynuber)
+document.write("<br>");
+}
+
+}
+
+
+function lalitwhile()
+{
+let ii=1;
+ let mynuber = document.getElementById("inputnumber").value;
+
+ while(ii < 11)
+ {
+    document.write( mynuber*ii++);
+    document.write("<br>");
+ }
+}
+
+
+function lalitdowhile()
+{
+let ii=1;
+ let mynuber = document.getElementById("inputnumber").value;
+do{
+    document.write( mynuber*ii++);
+    document.write("<br>");
+}
+ while(ii < 11)
+
+}
+
+
+
+const shanky = () => {
+
+alert("hello SHanky");
+
+}
+
+
+
+let aa = 10
+
+if(aa > 5)
+{
+   // alert("aa value is greater than 5");
+}
+else{
+   // alert("aa value is less than 5"); 
+}
+
+
+
+if(aa > 10)
+{
+   // alert("aa is greater than 10");
+}
+else if(aa > 15)
+{
+   // alert("aa is greater than 10");
+}
+else if(aa > 20)
+{
+   // alert("aa is greater than 10");
+}
+else
+{
+   // alert("aa is less than 10");
+    
+}document.write("<br>");
+
+
+
+for(ii=1;ii < 11; ii++)
+{
+//document.write(ii*2)
+//document.write("<br>");
+}
+
+
+
+
+
+let dayy = new Date().getDay();
+alert(dayy);
+switch (dayy) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+document.write(day)
+
+
+
+function lalsingh(a,b)
+{
+document.write("sum value is",a+b);
+}
+
+
+
+ </script>
+</body>
+</html>
